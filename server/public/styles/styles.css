@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    color: #EE5757;
+}
+
+.well {
+    background-color: #5f92ec;
+    color: #F0FFFF;
+    width: 32%;
+    margin: 5px 5px;
+}

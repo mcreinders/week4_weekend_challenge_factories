@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="githubApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 4 Weekend Challenge</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-controller="MyController">
+    <h1 class="page-header"><img src="https://avatars.githubusercontent.com/u/13934959?" width="35" height="35">Week 4 Weekend Challenge - Factories<img src="https://avatars.githubusercontent.com/u/13934959?" width="35" height="35"></h1>
+    <div class="well col-md-4" ng-repeat="data in data.results.data">
+        <p>ID: {{data.id}}</p>
+        <p>Type: {{data.type}}</p>
+        <p>url: {{data.actor.url}}</p>
+        <p>Name: {{data.repo.name}}</p>
+        <p>Ref: {{data.payload.ref}}</p>
+        <p>Public: {{data.public}}</p>
+        <p>Created: {{data.created_at}}</p>
+    </div>
+</body>
+</html>
+
